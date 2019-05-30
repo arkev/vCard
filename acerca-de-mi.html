@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap" rel="stylesheet">
     <title>Arkev | un poco acerca de quién soy yo</title>
 </head>
 <body>
     <header>
         <img src="imagenes/allen.svg" alt="Allen Zapien Diseñador UX/UI">
+        <div class="menu-section">
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
         <nav>
-            <ul>
+            <ul role="navigation" class="hidden">
                 <a href="index.html"><li>Inicio</li></a>
                 <a href="acerca-de-mi.html"><li>Acerca de mi</li></a>
                 <a href="servicios.html"><li>Servicios</li></a>
                 <a href="contacto.html"><li>Contacto</li></a>
             </ul>
         </nav>
+    </div>
     </header>
     
-    <img src="imagenes/tools_ux-ui.jpg" alt="Estratega Digital">
+    <h1>Acerca de Allen Zapien</h1>
+
+    <div id="tools"><img src="imagenes/tools_ux-ui.jpg" alt="Estratega Digital"></div>
+    
 
     <p>A lo largo de mis más de 10 años como profesionista, he adquirido diversas habilidades y conocimientos, tanto trabajando como freelancer como en las distintas empresas para las cuales he trabajado y en los últimos años como docente universitario.</p>
 
-    <ul>
+    <ul id="listado">
         <li>Diseño UX</li>
         <li>Diseño UI</li>
         <li>Diseño responsivo</li>
@@ -43,5 +55,13 @@
     <footer>
         © 2019 Todos los derechos resevados, sitio diseñado por Arkev
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(".menu-toggle").on('click', function () {
+            $(this).toggleClass("on");
+            $('.menu-section').toggleClass("on");
+            $("nav ul").toggleClass('hidden');
+        });
+    </script>
 </body>
 </html>

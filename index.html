@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Arkev | Diseñador UX/UI, Desarrollador Frontend, Estratega Digital, Growth Hacker y Docente Universitario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap" rel="stylesheet">
+    <title>Arkev | Diseñador UX/UI, Desarrollador Frontend, Estratega Digital, Growth Hacker y Docente Universitario
+    </title>
 </head>
-<body>
+
+<body id="inicio">
     <header>
         <img src="imagenes/allen.svg" alt="Allen Zapien Diseñador UX/UI">
-        <nav>
-            <ul>
-                <a href="index.html"><li>Inicio</li></a>
-                <a href="acerca-de-mi.html"><li>Acerca de mi</li></a>
-                <a href="servicios.html"><li>Servicios</li></a>
-                <a href="contacto.html"><li>Contacto</li></a>
-            </ul>
-        </nav>
+        <div class="menu-section">
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <nav>
+                <ul role="navigation" class="hidden">
+                    <a href="index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="acerca-de-mi.html">
+                        <li>Acerca de mi</li>
+                    </a>
+                    <a href="servicios.html">
+                        <li>Servicios</li>
+                    </a>
+                    <a href="contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <h1>Hola, soy Allen Zapien</h1>
-    <img src="imagenes/arkev-full.jpg" alt="Arkev Desarrollador Frontend">
+
+    <div id="arkev">
+        <img src="imagenes/arkev-full.jpg" alt="Arkev Desarrollador Frontend" >
+    </div>
+
+    <p>
+        Diseñador UX/UI, Desarrollador Frontend, Estratega Digital, Growth Hacker y Docente Universitario.
+    </p>
+    
     <footer>
         © 2019 Todos los derechos resevados, sitio diseñado por Arkev
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(".menu-toggle").on('click', function () {
+            $(this).toggleClass("on");
+            $('.menu-section').toggleClass("on");
+            $("nav ul").toggleClass('hidden');
+        });
+    </script>
 </body>
+
 </html>

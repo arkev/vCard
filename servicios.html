@@ -4,41 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap" rel="stylesheet">
     <title>Arkev | Los servicios que ofresco como Consultor SEO/SEM, Publicidad digital, Diseño UX/UI e Inbound Marketing</title>
 </head>
 <body>
     <header>
         <img src="imagenes/allen.svg" alt="Allen Zapien Diseñador UX/UI">
+        <div class="menu-section">
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
         <nav>
-            <ul>
+            <ul role="navigation" class="hidden">
                 <a href="index.html"><li>Inicio</li></a>
                 <a href="acerca-de-mi.html"><li>Acerca de mi</li></a>
                 <a href="servicios.html"><li>Servicios</li></a>
                 <a href="contacto.html"><li>Contacto</li></a>
             </ul>
         </nav>
+    </div>
     </header>
     
-    <img src="imagenes/consultor-seo.jpg" alt="Consultor SEO">
+    <h1>Servicios</h1>
 
-    <img src="imagenes/SEO.svg" alt="Consultor SEO/SEM">
+    <div id="servicios">
+            <img src="imagenes/consultor-seo.jpg" alt="Consultor SEO">
+    </div>
+    
+    <img src="imagenes/SEO.svg" alt="Consultor SEO/SEM" class="servicio-icon">
     <h2>Consultor SEO/SEM</h2>
     <p>Te ayudo a posicionar en los primeros lugares de Google para que tu negocio pueda ser encontrado por tu íublico objetivo.</p>
 
-    <img src="imagenes/Publicidad-Digital.svg" alt="Publicidad digital">
+    <img src="imagenes/Publicidad-Digital.svg" alt="Publicidad digital" class="servicio-icon">
     <h2>Publicidad digital</h2>
     <p>Si lo que necesitas es impactar a tu público objetivo de forma rápida y efectiva te puedo ayudar a planificar y ejecutar tu campaña digital.</p>
 
-    <img src="imagenes/UX.svg" alt="Diseño UX/UI">
+    <img src="imagenes/UX.svg" alt="Diseño UX/UI" class="servicio-icon">
     <h2>Diseño UX/UI</h2>
     <p>No hago solamente diseño bonitos, hago diseños funcionales centrados en los usuario y que son probados con usuarios reales para medir su desempeño</p>
 
-    <img src="imagenes/inbound-marketing.svg" alt="Inbound Marketing">
+    <img src="imagenes/inbound-marketing.svg" alt="Inbound Marketing" class="servicio-icon">
     <h2>Inbound Marketing</h2>
     <p>Si lo que necesitas es una estrategia completa basada en esta metodología yo te ayudo a crearla y ejecutarla orientada a la conversión</p>
 
     <footer>
         © 2019 Todos los derechos resevados, sitio diseñado por Arkev
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(".menu-toggle").on('click', function () {
+            $(this).toggleClass("on");
+            $('.menu-section').toggleClass("on");
+            $("nav ul").toggleClass('hidden');
+        });
+    </script>
 </body>
 </html>
