@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <title>Arkev | Diseñador UI/UX, Desarrollador Frontend y Growth Hacker</title>
+    <meta name="description" content="Hola! Soy Arkev diseñador UI/UX, desarrollador frontend, growth hacker, consultor SEO/SEM, estratega digital ubicado en Montemorelos Nuevo León. ¡Contáctame!">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap" rel="stylesheet">
-    <title>Arkev | Diseñador UX/UI, Desarrollador Frontend, Estratega Digital, Growth Hacker y Docente Universitario
-    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="inicio">
     <header>
-        <img src="imagenes/allen.svg" alt="Allen Zapien Diseñador UX/UI">
+        <img src="images/Firma.svg" alt="Allen Zapien">
         <div class="menu-section">
             <div class="menu-toggle">
                 <div class="one"></div>
@@ -39,28 +40,24 @@
         </div>
     </header>
 
-    <h1>Hola, soy Allen Zapien</h1>
-
-    <div id="arkev">
-        <img src="imagenes/arkev-full.jpg" alt="Arkev Desarrollador Frontend" >
-    </div>
-
+    <section id="soyArkev">
+        <img src="images/arkev-full.jpg" alt="Arkev | Allen Zapien">
+        <div>
+            <h1>Hola, soy <span>Arkev</span></h1>
+            <div id="redes">
+                <a href="https://twitter.com/arkev"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/arkev"><i class="fab fa-instagram"></i></a>
+                <a href="https://bit.ly/SubArkev"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
     <p>
         Diseñador UX/UI, Desarrollador Frontend, Estratega Digital, Growth Hacker y Docente Universitario.
     </p>
-    
     <footer>
-        © 2019 Todos los derechos resevados, sitio diseñado por Arkev
+        © <span id="anio"></span> Todos los derechos resevados, sitio diseñado por Arkev
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        $(".menu-toggle").on('click', function () {
-            $(this).toggleClass("on");
-            $('.menu-section').toggleClass("on");
-            $("nav ul").toggleClass('hidden');
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
